@@ -24,7 +24,7 @@ def load_datasets():
     train_dataset = pd.read_csv("train_dataset.csv")
     test_dataset = pd.read_csv("test_dataset.csv")
 
-    from prepocessData import preprocess_data
+    from notebook import preprocess_data
 
     train_dataset, test_dataset = preprocess_data(train_dataset, test_dataset)
 
